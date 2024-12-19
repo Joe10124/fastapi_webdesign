@@ -4,9 +4,9 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-alembic = "*"
 fastapi = "*"
 pydantic = "*"
+alembic = "*"
 
 [dev-packages]
 
