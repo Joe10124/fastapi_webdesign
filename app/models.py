@@ -10,6 +10,7 @@ class Todo(Base):
     description = Column(String, nullable=True)
     completed = Column(Boolean, default=False)
     sort = Column(Integer)
+    priority = Column(Integer, default=1)
     
 class User(Base):
     __tablename__ = "users"
@@ -18,3 +19,4 @@ class User(Base):
     username = Column(String, nullable=False)
     password = Column(String, nullable=True)
     email = Column(String, unique=True, nullable=True)
+    priority = Column(Integer, default=1)
